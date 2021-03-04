@@ -1,0 +1,32 @@
+$heading1: 4.88rem;
+$heading2: 3.9rem;
+$heading3: 3.1rem;
+$heading4: 2.5rem;
+$heading5: 2rem;
+$text: 1.6rem;
+
+$primary_color: #ffde21;
+$secondary_color: #5a00e0;
+$heading_color: #1b0760;
+$body_color: #3d3d3d;
+$light_yellow: #f9fd24;
+$gray_background: #f9f9f9;
+
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@import "global";
+@import "main";
+@import "service";
+@import "benefit";
+@import "tour";
+@import "testimony";
+@import "about";
+@import "contact";
+@import "footer";
+@import "gallery";
+@import "login";

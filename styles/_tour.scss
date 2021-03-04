@@ -1,0 +1,101 @@
+.tour {
+  width: 90%;
+  margin: auto;
+  min-height: 140vh;
+}
+.tour__text {
+  min-height: 30vh;
+
+  text-align: center;
+  //   @include flex(column, space-around, center);
+  margin-bottom: 2rem;
+}
+.tour__text h3 {
+  margin: 3rem 0 2rem;
+}
+
+.tour__text p {
+  width: 70%;
+  margin: auto;
+}
+.tour__dests {
+  min-height: 90vh;
+  display: grid;
+  grid-template-columns: repeat(3, 290px);
+  grid-template-rows: auto;
+  justify-content: center;
+  gap: 30px;
+}
+
+.tour__dest img {
+  //   align-self: flex-end;
+  width: 100%;
+  //   max-height: 100%;
+}
+
+.img__des {
+  @include flex(row, space-between, flex-start);
+}
+
+.tour__btns {
+  margin-top: 3rem;
+  min-height: 10vh;
+  text-align: center;
+}
+
+.tour__btns .btn--tran {
+  color: $body_color;
+  //   margin-top: 2rem;
+}
+
+.add {
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)),
+    url(../img/landing.png);
+  margin-top: 3rem;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.add_wrapper {
+  width: 95%;
+  margin: auto;
+  min-height: 20vh;
+  @include flex(row, space-around, center);
+  flex-wrap: wrap;
+}
+.add h4 {
+  color: #fff;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+  // margin-right: 4rem;
+}
+.add .btn {
+  background-color: $light_yellow;
+}
+
+@media screen and (max-width: 778px) {
+  .add {
+    display: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  .tour__dests {
+    grid-template-columns: repeat(2, 270px);
+    gap: 30px;
+  }
+  .tour__text p {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .tour__dests {
+    grid-template-columns: 350px;
+  }
+  .tour__btns .btn--tran {
+    margin: 2rem 0;
+  }
+  .tour__btns .btn--yellow {
+    margin-right: 1rem;
+  }
+}

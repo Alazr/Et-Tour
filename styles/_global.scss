@@ -1,0 +1,50 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  line-height: 1.7;
+  letter-spacing: 1px;
+  font-size: $text;
+  color: $body_color;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Roboto", sans-serif;
+  color: #000;
+}
+
+h1 {
+  font-size: $heading1;
+}
+
+h2 {
+  font-size: $heading2;
+}
+h3 {
+  font-size: $heading3;
+}
+h4 {
+  font-size: $heading4;
+}
+h5 {
+  font-size: $heading5;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}

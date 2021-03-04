@@ -1,0 +1,56 @@
+footer {
+  width: 100%;
+  background: #131c27;
+  color: #fff;
+}
+.footer_wrapper {
+  min-height: 10vh;
+  width: 90%;
+  margin: auto;
+  @include flex(row, space-between, center);
+  flex-wrap: wrap;
+}
+.footer_wrapper .logo__text {
+  margin: 1rem 0;
+  flex: 1 1 20rem;
+}
+.footer_wrapper p {
+  width: 60%;
+  font-size: 1.4rem;
+  margin: 1rem auto;
+}
+.social__icons {
+  margin: 1rem 0;
+  flex: 1 1 20rem;
+  @include flex(row, space-around, center);
+}
+.card__icon {
+  width: 20px;
+  height: 20px;
+}
+@media screen and (max-width: 778px) {
+  .social__icons,
+  .footer_wrapper .logo__text {
+    flex: 1 1 15rem;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .social__icons,
+  .footer_wrapper .logo__text,
+  .footer_wrapper p {
+    flex: 1 1 30rem;
+  }
+  .footer_wrapper {
+    text-align: center;
+  }
+  .footer_wrapper .logo__text {
+    margin-top: 1rem;
+  }
+  .footer_wrapper p {
+    margin: 2rem 0;
+  }
+  .social__icons {
+    margin-bottom: 0.5rem;
+  }
+}

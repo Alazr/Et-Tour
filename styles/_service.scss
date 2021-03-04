@@ -1,0 +1,74 @@
+.services {
+  overflow: hidden;
+  min-height: 90vh;
+  background-color: $gray_background;
+}
+.service__cards,
+.service__text {
+  width: 90%;
+  margin: auto;
+}
+.service__text {
+  min-height: 30vh;
+  display: flex;
+  @include flex(column, center, center);
+  text-align: center;
+}
+
+.service__text h3 {
+  margin: 2rem;
+}
+.service__text p {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+.service__cards {
+  min-height: 60vh;
+  @include flex(row, space-around, center);
+  flex-wrap: wrap;
+}
+
+.service__card {
+  min-height: 45vh;
+  flex-basis: 30rem;
+  background: #fff;
+  margin: 2.5rem 1rem;
+  padding: 2rem;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 0 30px rgba($color: #000000, $alpha: 0.3);
+}
+.service__card h4 {
+  margin: 1rem 0 2rem;
+}
+.service__card.card2 p {
+  margin-bottom: 4rem;
+}
+.service__card p {
+  margin-bottom: 2rem;
+}
+.service__card a {
+  color: $secondary_color;
+  font-weight: 600;
+}
+.icon_wrapper {
+  position: absolute;
+  top: -25px;
+  right: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  transform: translateX(50%);
+  background: $primary_color;
+  border-radius: 100%;
+}
+.icon_wrapper svg {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 778px) {
+  .service__text p {
+    width: 100%;
+  }
+}

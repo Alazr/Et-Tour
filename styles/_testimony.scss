@@ -1,0 +1,46 @@
+.testimony {
+  min-height: 60vh;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+}
+
+.testimony__header {
+  min-height: 20vh;
+  @include flex(row, center, center);
+}
+.testimony__header h3 {
+  margin-top: 2rem;
+}
+.testimonial_wrapper {
+  min-height: 40vh;
+  @include flex(row, space-around, center);
+  flex-wrap: wrap;
+}
+
+.testimonial {
+  margin: 3rem 1rem;
+  flex-basis: 30rem;
+  text-align: left;
+}
+.testimonial > p {
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+.testimonial__media {
+  @include flex(row, flex-start, center);
+}
+
+.testimonial__media img {
+  width: 60px;
+  height: 60px;
+  margin-right: 1rem;
+}
+
+.sliders {
+  width: 200px;
+  margin: auto;
+}
+.sliders input {
+  margin: 2rem;
+}

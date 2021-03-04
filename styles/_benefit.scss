@@ -1,0 +1,75 @@
+.benefits {
+  min-height: 90vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+    url(../img/pexels-nandhu.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.benefit__text,
+.benefit__cards {
+  width: 90%;
+  margin: auto;
+}
+.benefit__text {
+  min-height: 60vh;
+  @include flex(column, space-around, center);
+}
+.benefit__text h2 {
+  color: $primary_color;
+  margin-top: 3rem;
+}
+.benefit_wrapper {
+  @include flex(row, space-around, center);
+  flex-wrap: wrap;
+}
+.benefit {
+  flex: 1 1 25rem;
+  border-right: 1px solid #fff;
+  margin: 3rem;
+  padding-right: 1rem;
+}
+.benefit h3 {
+  color: $primary_color;
+  white-space: nowrap;
+  margin-bottom: 1rem;
+}
+.benefit p {
+  color: #fff;
+}
+
+.benefit__cards {
+  margin-top: 2rem;
+  min-height: 30vh;
+  @include flex(row, space-around, center);
+  flex-wrap: wrap;
+}
+.benefit_card {
+  padding: 3rem 2rem;
+  flex-basis: 22rem;
+  margin: 2rem;
+}
+.card--yellow {
+  background: $primary_color;
+}
+.card--tran {
+  border: 1px solid $primary_color;
+}
+.benefit_card p,
+.benefit_card h4 {
+  text-align: center;
+  color: #fff;
+  white-space: nowrap;
+}
+.benefit_card h4 {
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 778px) {
+  .benefit__text h2 {
+    margin: 3rem;
+  }
+  .benefits {
+    background-attachment: scroll;
+  }
+}
